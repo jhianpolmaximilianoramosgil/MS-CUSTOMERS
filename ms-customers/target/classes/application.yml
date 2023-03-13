@@ -1,0 +1,9 @@
+
+
+spring:
+  data:
+    mongodb:
+      database: db_ms_customers
+      uri: mongodb+srv://jhianpol:12345@cluster0.hvzkv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+server:
+  port: 8084
