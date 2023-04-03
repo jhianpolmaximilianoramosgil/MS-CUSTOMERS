@@ -1,10 +1,10 @@
-package com.nttdata.bank.client;
+package com.customers;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BankClientServiceApplicationTests {
+class BootcampCustomersApplicationTests {
 
 	@Test
 	void contextLoads() {
