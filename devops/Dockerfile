@@ -1,13 +1,20 @@
 FROM openjdk:8-jre-alpine
+RUN mvn clean install
+VOLUME /tmp
+COPY "./target/bootcamp_customers-0.0.1-SNAPSHOT.jar" "/app.jar"
+EXPOSE 8083
+ENTRYPOINT ["java", "-jar", "/app.jar"]
 
-# Create app directory
-RUN mkdir -p /opt/logs
-WORKDIR /opt
+#FROM openjdk:8-jre-alpine
 
-ADD *.jar /opt/
+# // Create app directory
+#RUN mkdir -p /opt/logs
+#WORKDIR /opt
 
-ENTRYPOINT [ "sh", "-c" ]
-CMD ["exec java -Duser.timezone=America/Lima  \
+#ADD *.jar /opt/
+
+#ENTRYPOINT [ "sh", "-c" ]
+#CMD ["exec java -Duser.timezone=America/Lima  \
                 -jar *.jar"]
 
-#docker build -f devops/Dockerfile  -t acreu2c011intedev01.azurecr.io/ayni-server2:1.0.0 .
+# // docker build -f devops/Dockerfile  -t acreu2c011intedev01.azurecr.io/ayni-server2:1.0.0 .
