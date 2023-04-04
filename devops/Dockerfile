@@ -15,6 +15,6 @@ ENTRYPOINT ["java", "-jar", "/app.jar"]
 
 #ENTRYPOINT [ "sh", "-c" ]
 #CMD ["exec java -Duser.timezone=America/Lima  \
-                -jar *.jar"]
+#                -jar *.jar"]
 
 # // docker build -f devops/Dockerfile  -t acreu2c011intedev01.azurecr.io/ayni-server2:1.0.0 .
