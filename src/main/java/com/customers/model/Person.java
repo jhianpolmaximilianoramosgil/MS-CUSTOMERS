@@ -30,4 +30,8 @@ public class Person {
 	private String typeCustomer;
 	
 	private String typeProfile;
+
+	public Person() {
+
+	}
 }
